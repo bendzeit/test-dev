@@ -190,27 +190,6 @@ function App() {
 }
 ```
 
-## 🧪 Development
-
-### Available Scripts
-
-```bash
-# Start Storybook development server
-npm run storybook
-
-# Build Storybook for production
-npm run build-storybook
-
-# Run component tests
-npm run test
-
-# Run linting
-npm run lint
-
-# Type checking
-npm run type-check
-```
-
 ### Adding New Components
 
 1. Create component directory: `src/components/ComponentName/`
@@ -286,8 +265,6 @@ This project is licensed under the MIT License - see the [LICENSE](./LICENSE) fi
 ---
 
 <div align="center">
-
-**Made with ❤️ by [Your Name](https://github.com/yourusername)**
 
 [![Storybook](https://img.shields.io/badge/Storybook-FF4785?style=for-the-badge&logo=storybook&logoColor=white)](https://your-storybook-url.netlify.app)
 [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
