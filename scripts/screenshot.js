@@ -23,12 +23,12 @@ const stories = [
   },
   {
     name: "toast-success",
-    url: "/iframe.html?id=design-system-molecules-toast--success-toast",
+    url: "/iframe.html?id=design-system-atoms-toast--success-toast",
     viewport: { width: 1200, height: 400 },
   },
   {
     name: "toast-error",
-    url: "/iframe.html?id=design-system-molecules-toast--error-toast",
+    url: "/iframe.html?id=design-system-atoms-toast--error-toast",
     viewport: { width: 1200, height: 400 },
   },
   {

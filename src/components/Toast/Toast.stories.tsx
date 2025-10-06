@@ -3,7 +3,7 @@ import Toast from "./Toast";
 import { ToastWithTrigger, MultipleToastsDemo } from "./__stories__";
 
 const meta: Meta<typeof Toast> = {
-  title: "Design System/Molecules/Toast",
+  title: "Design System/Atoms/Toast",
   component: Toast,
   parameters: {
     layout: "fullscreen",
