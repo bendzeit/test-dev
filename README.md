@@ -245,17 +245,6 @@ We welcome contributions! Please see our [Contributing Guidelines](./CONTRIBUTIN
 6. Push to the branch: `git push origin feature/amazing-feature`
 7. Open a Pull Request
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- [Storybook](https://storybook.js.org/) for the amazing documentation platform
-- [React](https://reactjs.org/) for the component framework
-- [Vite](https://vitejs.dev/) for the build tooling
-- [TypeScript](https://www.typescriptlang.org/) for type safety
-
 ## 📞 Support
 
 - 📧 Email: support@yourcompany.com
