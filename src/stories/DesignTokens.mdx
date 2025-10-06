@@ -1,0 +1,170 @@
+import { Canvas, Meta } from "@storybook/addon-docs/blocks";
+import { ColorPalette, ColorItem, Typeset } from "@storybook/blocks";
+import SpacingDemo from "./components/SpacingDemo";
+import BorderRadiusDemo from "./components/BorderRadiusDemo";
+import ShadowDemo from "./components/ShadowDemo";
+
+<Meta title="Design Tokens" />
+
+# Design Tokens
+
+Design tokens are the visual design atoms of our design system. They define colors, typography, spacing, and other foundational elements that ensure consistency across all components.
+
+## Colors
+
+Our color palette provides semantic meaning and visual hierarchy throughout the design system.
+
+### Primary Colors
+
+<ColorPalette>
+  <ColorItem
+    title="Primary Blue"
+    subtitle="Main brand color"
+    colors={{
+      Primary: "#3b82f6",
+      "Primary Dark": "#2563eb",
+      "Primary Light": "#60a5fa",
+    }}
+  />
+</ColorPalette>
+
+### Semantic Colors
+
+<ColorPalette>
+  <ColorItem
+    title="Success"
+    subtitle="Positive actions and states"
+    colors={{
+      Success: "#10b981",
+      "Success Dark": "#059669",
+      "Success Light": "#34d399",
+    }}
+  />
+  <ColorItem
+    title="Error"
+    subtitle="Errors and destructive actions"
+    colors={{
+      Error: "#ef4444",
+      "Error Dark": "#dc2626",
+      "Error Light": "#f87171",
+    }}
+  />
+  <ColorItem
+    title="Warning"
+    subtitle="Cautions and important notices"
+    colors={{
+      Warning: "#f59e0b",
+      "Warning Dark": "#d97706",
+      "Warning Light": "#fbbf24",
+    }}
+  />
+  <ColorItem
+    title="Info"
+    subtitle="Information and neutral states"
+    colors={{
+      Info: "#3b82f6",
+      "Info Dark": "#2563eb",
+      "Info Light": "#60a5fa",
+    }}
+  />
+</ColorPalette>
+
+### Neutral Colors
+
+<ColorPalette>
+  <ColorItem
+    title="Grays"
+    subtitle="Text, borders, and backgrounds"
+    colors={{
+      "Gray 900": "#111827",
+      "Gray 700": "#374151",
+      "Gray 500": "#6b7280",
+      "Gray 300": "#d1d5db",
+      "Gray 100": "#f3f4f6",
+      "Gray 50": "#f9fafb",
+    }}
+  />
+</ColorPalette>
+
+## Typography
+
+Our typography scale provides consistent text sizing and hierarchy.
+
+<Typeset
+  fontSizes={[12, 14, 16, 18, 20, 24, 32, 40, 48]}
+  fontWeight={400}
+  sampleText="The quick brown fox jumps over the lazy dog"
+  fontFamily="system-ui, -apple-system, sans-serif"
+/>
+
+### Font Weights
+
+- **Regular (400)**: Body text and most UI elements
+- **Medium (500)**: Labels and emphasized text
+- **Semibold (600)**: Headings and important information
+- **Bold (700)**: Strong emphasis and titles
+
+## Spacing
+
+Our spacing system uses a consistent scale based on 4px increments, providing a harmonious rhythm throughout the design system.
+
+<SpacingDemo />
+
+## Border Radius
+
+Consistent border radius values create visual hierarchy and define component personality.
+
+<BorderRadiusDemo />
+
+## Shadows
+
+Our elevation system uses carefully crafted box shadows to create depth, hierarchy, and visual separation.
+
+<ShadowDemo />
+
+## CSS Custom Properties
+
+Use these CSS custom properties in your applications for consistent theming:
+
+```css
+:root {
+  /* Colors */
+  --color-primary: #3b82f6;
+  --color-success: #10b981;
+  --color-error: #ef4444;
+  --color-warning: #f59e0b;
+  --color-info: #3b82f6;
+
+  /* Typography */
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-base: 16px;
+  --font-size-lg: 18px;
+  --font-size-xl: 20px;
+
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 12px;
+  --spacing-lg: 16px;
+  --spacing-xl: 20px;
+
+  /* Border Radius */
+  --border-radius-sm: 2px;
+  --border-radius-md: 4px;
+  --border-radius-lg: 8px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+```
+
+## Usage Guidelines
+
+- Always use design tokens instead of hardcoded values
+- Maintain consistency across all components and applications
+- Test color combinations for accessibility compliance
+- Use semantic color names rather than specific color values
+- Follow the spacing scale for consistent layouts

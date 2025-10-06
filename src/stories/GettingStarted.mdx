@@ -1,0 +1,84 @@
+import { Meta } from "@storybook/addon-docs/blocks";
+
+<Meta title="Getting Started" />
+
+# Getting Started
+
+Learn how to use our design system components in your React application.
+
+## Installation
+
+```bash
+npm install @org/design-system
+# or
+yarn add @org/design-system
+```
+
+## Basic Usage
+
+Import components directly from the package:
+
+```jsx
+import { Input, Toast, Sidebar } from "@org/design-system";
+
+function MyApp() {
+  return (
+    <div>
+      <Input
+        label="Username"
+        placeholder="Enter your username"
+        value=""
+        onChange={(value) => console.log(value)}
+        type="text"
+        clearable={false}
+      />
+    </div>
+  );
+}
+```
+
+## CSS Modules
+
+Our components use CSS modules for styling. Make sure your build system supports CSS modules, or import the compiled CSS:
+
+```jsx
+// If using CSS modules (recommended)
+import "design-system/dist/styles/design-tokens.css";
+
+// Or import individual component styles
+import "design-system/dist/Input.css";
+```
+
+## TypeScript Support
+
+All components are built with TypeScript and include full type definitions:
+
+```tsx
+import { Input, InputProps } from "@org/design-system";
+
+const MyInput: React.FC<InputProps> = (props) => {
+  return <Input {...props} />;
+};
+```
+
+## Theming
+
+Components support CSS custom properties for theming:
+
+```css
+:root {
+  --color-primary: #3b82f6;
+  --color-success: #10b981;
+  --color-error: #ef4444;
+  --color-warning: #f59e0b;
+  --border-radius: 4px;
+  --font-size-base: 14px;
+}
+```
+
+## Next Steps
+
+- Browse components in the sidebar
+- Try the interactive playground for each component
+- Check out real-world examples in the recipe stories
+- Read our contribution guidelines

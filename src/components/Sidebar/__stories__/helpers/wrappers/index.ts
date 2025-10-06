@@ -1,0 +1,1 @@
+export { SidebarWithTrigger } from "./SidebarWithTrigger";
